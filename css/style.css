@@ -16,17 +16,22 @@ body {
 /* Nav */
 #one , #two 
 {
-    width: 18%;
+    width:20%;
 }
-.nav-link 
-{
+.nav-link {
     border: solid 2px transparent;
     transition: all 0.2s;
 }
+
 .nav-link:hover {
     border-bottom: solid 2px var(--mainColor);
 }
-
+@media screen and (min-width:0px) and (max-width: 576px) {
+    #one,
+    #two {
+        width: 50%;
+    }
+}
 @media screen and (max-width: 991px) {
     ul {
         background-color: white;
@@ -35,6 +40,11 @@ body {
 
     .nav-link {
         color: black !important;
+    }
+
+    #one,
+    #two {
+        width: 30%;
     }
 
 }
@@ -380,7 +390,6 @@ footer p {
     opacity: 1;
 }
 
-.fit-content
-{
+.fit-content {
     width: fit-content;
 }
